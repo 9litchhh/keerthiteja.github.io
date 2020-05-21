@@ -19,24 +19,14 @@
         <table id="example" class="display" style="width:100%">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Extn.</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th>Symbol</th>
+                    <th>Trade Type</th>
+                    <th>Qty</th>
+                    <th>Price</th>
+                    <th>Total Amount</th>
+                    <th>Time</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Extn.</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
-                </tr>
-            </tfoot>
         </table>
     </div>
 
@@ -52,12 +42,12 @@
             $('#example').DataTable({
                 "ajax": "data.txt",
                 "columns": [
-                    { "data": "name" },
-                    { "data": "position" },
-                    { "data": "office" },
-                    { "data": "extn" },
-                    { "data": "start_date" },
-                    { "data": "salary" }
+                    { "data": "symbol" },
+                    { "data": "trade_type" },
+                    { "data": "qty" },
+                    { "data": "price" },
+                    { "data": "total_amount" },
+                    { "data": "time" }
                 ]
             });
         });
